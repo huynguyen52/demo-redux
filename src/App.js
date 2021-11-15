@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <Overlay />
-      <HeaderMain />
+      {/* <HeaderMain /> */}
       <div className="container">
         <HeaderBottom />
       </div>
