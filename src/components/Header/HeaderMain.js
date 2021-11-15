@@ -5,7 +5,7 @@ import logo from "../../assets/images/logo.png";
 import { useState } from "react/cjs/react.development";
 import Submenu from "./Submenu";
 
-const HeaderMain = () => {
+function HeaderMain() {
   const [page, setPage] = useState("home");
   const [submenu, setSubmenu] = useState("");
   const [showSubnav, setShowSubnav] = useState(false);
@@ -126,7 +126,7 @@ const HeaderMain = () => {
       </div>
     </header>
   );
-};
+}
 
 const content = [
   {
