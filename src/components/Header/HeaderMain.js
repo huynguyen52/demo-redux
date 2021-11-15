@@ -6,7 +6,8 @@ import { useState } from "react/cjs/react.development";
 import Submenu from "./Submenu";
 
 function HeaderMain() {
-  const [page, setPage] = useState("home");
+  // const [page, setPage] = useState("home");
+  const page = "home";
   const [submenu, setSubmenu] = useState("");
   const [showSubnav, setShowSubnav] = useState(false);
 
