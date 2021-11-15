@@ -22,10 +22,10 @@ function App() {
       </div>
       <Switch>
         <Route path="/" exact component={HomePage} />
-        <Route path="/product" component={ProductPage} />
+        {/* <Route path="/product" component={ProductPage} />
         <Route path="/shop" component={ShopPage} />
         <Route path="/cart" component={CartPage} />
-        <Route path="/blog" component={PostPage} />
+        <Route path="/blog" component={PostPage} /> */}
       </Switch>
       <div className="top-div" style={{ borderTop: "1px solid #000000" }}></div>
       <Footer />
