@@ -10,7 +10,7 @@ function HeaderMain() {
   const [submenu, setSubmenu] = useState("");
   const [showSubnav, setShowSubnav] = useState(false);
 
-  const handlePage = (page) => setPage(page);
+  // const handlePage = (page) => setPage(page);
 
   const handleHoverMenu = (e) => {
     setSubmenu(e.target.textContent.toLowerCase());
@@ -41,14 +41,14 @@ function HeaderMain() {
           <ul className="menu" onMouseLeave={handleLeaveMenu}>
             <li
               className={`menu__item ${page === "home" ? "active" : ""}`}
-              onClick={() => handlePage("home")}
+              // onClick={() => handlePage("home")}
             >
               <Link onMouseEnter={handleHoverMenu} to="/">
                 Home
               </Link>
             </li>{" "}
             <li
-              onClick={() => handlePage("shop")}
+              // onClick={() => handlePage("shop")}
               className={`menu__item ${page === "shop" ? "active" : ""}`}
             >
               <Link onMouseEnter={handleHoverMenu} to="/shop">
@@ -56,7 +56,7 @@ function HeaderMain() {
               </Link>
             </li>
             <li
-              onClick={() => handlePage("blog")}
+              // onClick={() => handlePage("blog")}
               className={`menu__item ${page === "blog" ? "active" : ""}`}
             >
               <Link onMouseEnter={handleHoverMenu} to="/blog">
@@ -68,7 +68,7 @@ function HeaderMain() {
               />
             </li>
             <li
-              onClick={() => handlePage("short-code")}
+              // onClick={() => handlePage("short-code")}
               className={`menu__item ${page === "short-code" ? "active" : ""}`}
             >
               <Link onMouseEnter={handleHoverMenu} to="/short-code">
@@ -80,7 +80,7 @@ function HeaderMain() {
               />
             </li>
             <li
-              onClick={() => handlePage("features")}
+              // onClick={() => handlePage("features")}
               className={`menu__item ${page === "features" ? "active" : ""}`}
             >
               <Link onMouseEnter={handleHoverMenu} to="/features">
@@ -93,7 +93,7 @@ function HeaderMain() {
               />
             </li>
             <li
-              onClick={() => handlePage("media")}
+              // onClick={() => handlePage("media")}
               className={`menu__item ${page === "media" ? "active" : ""}`}
             >
               <Link onMouseEnter={handleHoverMenu} to="/media">
@@ -106,7 +106,7 @@ function HeaderMain() {
               />
             </li>
             <li
-              onClick={() => handlePage("about-us")}
+              // onClick={() => handlePage("about-us")}
               className={`menu__item ${page === "about-us" ? "active" : ""}`}
             >
               <Link onMouseEnter={handleHoverMenu} to="/about-us">
