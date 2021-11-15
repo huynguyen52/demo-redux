@@ -1,0 +1,35 @@
+$primaryColor: #d15f31;
+$secondaryColor: #5a3320;
+$textColor: #777777;
+
+.author-info {
+  .author-avatar {
+    width: 74px;
+    max-width: 74px;
+    height: 74px;
+    max-height: 74px;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .author-content {
+    padding-top: 18px;
+  }
+  .author-title {
+    color: $secondaryColor;
+    font-size: 2.4rem;
+    margin: 8px 0;
+    font-family: "Lato", sans-serif;
+  }
+  .author-link {
+    text-decoration: underline;
+    &::after {
+      content: "\2192";
+    }
+    &:hover {
+      color: $primaryColor;
+      text-decoration: none;
+    }
+  }
+}

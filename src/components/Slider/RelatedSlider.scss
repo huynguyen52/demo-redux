@@ -1,0 +1,49 @@
+$secondaryColor: #5a3320;
+
+.related-slide {
+  margin-bottom: 15px;
+  .header--related-slider {
+    font-size: 1.8rem;
+    font-family: "Oswald", sans-serif;
+    color: $secondaryColor;
+    padding: 5px 0 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #d9d6c8;
+  }
+  max-width: 100%;
+  width: 750px;
+  #related-slider-btn-prev,
+  #related-slider-btn-next,
+  #related-slider-btn-prev-2,
+  #related-slider-btn-next-2 {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: -46px;
+    right: 0;
+    z-index: 10;
+    cursor: pointer;
+  }
+  #related-slider-btn-prev,
+  #related-slider-btn-prev-2 {
+    background: url("../../assets/images/sprite_10.png");
+    background-size: cover;
+    position: absolute;
+    right: 32px;
+    &:hover {
+      background: url("../../assets/images/sprite_12.png");
+      background-size: cover;
+    }
+  }
+  #related-slider-btn-next,
+  #related-slider-btn-next-2 {
+    background: url("../../assets/images/sprite_11.png");
+    background-size: cover;
+    position: absolute;
+    right: 0px;
+    &:hover {
+      background: url("../../assets/images/sprite_13.png");
+      background-size: cover;
+    }
+  }
+}

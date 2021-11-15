@@ -1,0 +1,167 @@
+$footerColor: #ebd1ae;
+$primaryColor: #d15f31;
+#footer {
+  background-color: #281b1a;
+  overflow: hidden;
+  color: $footerColor;
+  .footer-main {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 30px;
+    .footer-widget {
+      width: 230px;
+      margin-bottom: 20px;
+      opacity: 0;
+      &.from-left {
+        animation: fromLeft 1.25s linear forwards;
+        animation-delay: 0.75s;
+      }
+      &.from-top {
+        animation: fromTop 1.25s linear forwards;
+        animation-delay: 0.5s;
+      }
+      &.from-right {
+        animation: fromRight 1.25s linear forwards;
+        animation-delay: 0.75s;
+      }
+      &.from-bottom {
+        animation: fromBottom 1.25s linear forwards;
+        animation-delay: 0.75s;
+      }
+      .header {
+        color: $primaryColor;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-family: "Oswald", sans-serif;
+        margin-bottom: 15px;
+      }
+      .content {
+        .link__list {
+          .link__item {
+            &::before {
+              content: "\276F";
+              margin-right: 5px;
+              transition: 0.2s;
+            }
+            &:hover::before {
+              color: $primaryColor;
+            }
+            padding: 2px 0;
+            display: flex;
+            align-items: center;
+            a {
+              color: $footerColor;
+              text-decoration: none;
+              font-size: 1.4rem;
+              font-family: "Lato", sans-serif;
+              transition: 0.2s;
+              display: flex;
+              align-items: baseline;
+              text-transform: capitalize;
+              &:hover {
+                color: $primaryColor;
+              }
+              svg {
+                font-size: 1.6rem;
+                margin-right: 6px;
+                path {
+                  fill: $footerColor;
+                }
+              }
+            }
+            &.no-icon::before {
+              content: "";
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    padding: 10px 0 30px;
+    .footer-menu {
+      display: flex;
+      justify-content: center;
+      margin: 10px 0;
+      align-items: center;
+      .footer-menu__item {
+        background: url("../../assets/images/bkg_pipe1.jpg") no-repeat right
+          center;
+        padding: 0 10px;
+        &:last-child {
+          background: none;
+        }
+        &:hover a {
+          color: $primaryColor;
+        }
+        a {
+          text-decoration: none;
+          font-size: 1.4rem;
+          font-family: "Lato", sans-serif;
+          color: $footerColor;
+          text-transform: capitalize;
+          cursor: pointer;
+        }
+      }
+    }
+    .copy-right {
+      text-align: center;
+      font-size: 1.4rem;
+      font-family: "Lato", sans-serif;
+      color: $footerColor;
+      a {
+        color: $footerColor;
+        text-decoration: none;
+        &:hover {
+          color: $primaryColor;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fromLeft {
+  from {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fromRight {
+  from {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fromTop {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fromBottom {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,33 @@
+.slider-container {
+  position: relative;
+  width: 100%;
+  .slider-button-prev,
+  .slider-button-next {
+    display: none;
+  }
+  &:hover {
+    .slider-button-prev,
+    .slider-button-next {
+      display: block;
+    }
+  }
+  .swiper-pagination {
+    bottom: 35px;
+    span {
+      width: 15px;
+      height: 15px;
+      opacity: 1;
+      transition: 0.3s;
+      background-color: #ccc;
+      &:hover {
+        background-color: #bc482f;
+      }
+    }
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #bc482f !important;
+  }
+  .swiper-slide {
+    background-color: #f8f7f3;
+  }
+}

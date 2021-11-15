@@ -1,0 +1,34 @@
+$secondaryColor: #5a3320;
+.treeview__list {
+  a {
+    color: #777777;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-family: "Lato", sans-serif;
+    text-transform: capitalize;
+    transition: 0.1s;
+    &:hover {
+      color: #bc482f;
+    }
+  }
+  .nested {
+    margin-left: 10px;
+    max-height: 0;
+    transition: 1s;
+    &.expand {
+      max-height: 100px !important;
+    }
+  }
+  .treeview__item {
+    overflow: hidden;
+    padding: 4px 0;
+  }
+  .toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__icon {
+      cursor: pointer;
+    }
+  }
+}

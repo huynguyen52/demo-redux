@@ -1,0 +1,16 @@
+$secondaryColor: #5a3320;
+.tag {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-family: "Lato", sans-serif;
+  background-color: #d5cfc4;
+  text-decoration: none;
+  padding: 3px 10px;
+  margin: 5px;
+  color: $secondaryColor;
+  transition: 0.1s;
+  &:hover {
+    background: $secondaryColor;
+    color: #fff;
+  }
+}

@@ -1,0 +1,14 @@
+.bread-crumb {
+  margin: 5px 0;
+  span,
+  a {
+    font-size: 1.4rem;
+    font-family: "Lato", sans-serif;
+    color: #777777;
+    text-decoration: none;
+    transition: 0.1s;
+  }
+  a:hover {
+    color: #bc482f;
+  }
+}

@@ -1,0 +1,28 @@
+.slider-button-prev--product-panel,
+.slider-button-next--product-panel {
+  display: block !important;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.slider-button-prev--product-panel {
+  background: url("../../assets/images/sprite_08.png");
+  background-position: center;
+
+  left: -30px;
+  &:hover {
+    background: url("../../assets/images/sprite_01.png");
+    background-position: center;
+  }
+}
+
+.slider-button-next--product-panel {
+  background: url("../../assets/images/sprite_09.png");
+  background-position: center;
+  right: -30px;
+  &:hover {
+    background: url("../../assets/images/sprite_02.png");
+    background-position: center;
+  }
+}

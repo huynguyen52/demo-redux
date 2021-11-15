@@ -1,0 +1,17 @@
+.back-to-top {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: url("../../assets/images/up.png");
+  background-size: contain;
+  background-position: center;
+  cursor: pointer;
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  transition: 0.5s;
+  opacity: 0;
+  &.active {
+    opacity: 1;
+  }
+}
