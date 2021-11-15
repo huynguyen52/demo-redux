@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { FaTimes, FaShoppingBasket } from "react-icons/fa";
@@ -21,9 +21,11 @@ function HeaderBottom() {
   //get tracks broser's location
   const browserLocation = useLocation();
 
+  const stableDispatch = useCallback(dispatch, [dispatch]);
+
   useEffect(() => {
-    dispatch(fetchProduct());
-  }, []);
+    stableDispatch(fetchProduct());
+  }, [stableDispatch]);
 
   useEffect(() => {
     let count = 0;

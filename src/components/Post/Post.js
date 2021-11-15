@@ -19,19 +19,19 @@ function Post() {
         </span>
         <a href="/">
           <BiImage />
-          <a href="/">Image</a>
+          <span>Image</span>
         </a>
         <a href="/">
           <AiOutlineFolder />
-          <a href="/">Uncategoried</a>
+          <span>Uncategoried</span>
         </a>
         <a href="/">
           <FaTags />
-          <a href="/">Images, Post format</a>
+          <span>Images, Post format</span>
         </a>
         <a href="/">
           <BiUser />
-          <a href="/">Admin</a>
+          <span>Admin</span>
         </a>
       </div>
       <p className="blog-post__content">
