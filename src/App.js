@@ -2,15 +2,15 @@ import "./App.scss";
 import HeaderBottom from "./components/Header/HeaderBottom";
 import HeaderMain from "./components/Header/HeaderMain";
 import HomePage from "./pages/HomePage";
-import ProductPage from "./pages/ProductPage";
-import ShopPage from "./pages/ShopPage";
+// import ProductPage from "./pages/ProductPage";
+// import ShopPage from "./pages/ShopPage";
 
 import { Switch, Route } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import ToTopButton from "./components/BackToTop/ToTopButton";
 import Overlay from "./components/Overlay/Overlay";
-import CartPage from "./pages/CartPage/CartPage";
-import PostPage from "./pages/BlogPage/PostPage";
+// import CartPage from "./pages/CartPage/CartPage";
+// import PostPage from "./pages/BlogPage/PostPage";
 
 function App() {
   return (
